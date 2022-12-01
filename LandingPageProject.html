@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I ♥️ 🍞</title>
+    <style>
+      .training {
+        display: block;
+        margin: 20px auto;
+        border: 1px outset #fff;
+        border-radius: inherit;
+        padding: 0 20px;
+      }
+      .main {
+        display: block;
+        padding: 10px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(6, 2, 2) 32.4%,
+          rgb(137, 30, 47) 98.8%
+        );
+        border-radius: 20px;
+        max-width: 390px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        font-size: 10px;
+      }
+      h2,
+      h3 {
+        text-align: center;
+      }
+      a {
+        box-shadow: inset 0 0 0 0 #7a6e6ef4;
+        color: #7a6e6ef4;
+        font-family: Garmond, serif;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      a.benefits:hover {
+        box-shadow: inset 100px 0 0 0 #344045;
+        color: white;
+      }
+      body {
+        text-align: left;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+      }
+      button {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px;
+        background: #000;
+        color: #000;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #000;
+        background: #891e2f;
+      }
+      p {
+        text-align: left;
+      }
+      ul {
+        padding: 10px;
+      }
+      li {
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      span {
+        text-align: center;
+        /* margin: 0 auto; */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1><button>invest in yourself today</button></h1>
+      <hr />
+      <h2>Strength Training</h2>
+      <h3>If it doesn't challenge you, it doesn't change you.</h3>
+      <hr />
+      <p>
+        Strength training can help you manage or lose weight, and it can
+        increase your metabolism to help you burn more calories. Enhance your
+        quality of life. Strength training may enhance your quality of life and
+        improve your ability to do everyday activities. Strength training can
+        also protect your joints from injury.
+        <a
+          class="benefits"
+          href="https://en.wikipedia.org/wiki/Weight_training"
+          target="_blank"
+          >Learn more
+        </a>
+      </p>
+      <div class="training">
+        <h4>The <em>main types</em> of strength training include:</h4>
+        <ul>
+          <li>
+            <strong>Muscular hypertrophy.</strong> Also known as muscle
+            building, this type of strength training uses moderate-to-heavy
+            weights to stimulate muscle growth.
+          </li>
+          <li>
+            <strong>Muscular endurance.</strong> This refers to your muscles'
+            ability to sustain exercise for a period of time. Training to
+            increase muscular endurance usually involves high reps using light
+            weights or body weight.
+          </li>
+          <li>
+            <strong>Circuit training.</strong> During this form of full-body
+            conditioning, you cycle through various exercises with little to no
+            rest between them.
+          </li>
+          <li>
+            <strong>Maximum muscular strength.</strong> This type of exercise
+            involves low reps (usually 2-6) and heavy weights to improve your
+            overall strength. It's best reserved for experienced exercisers who
+            have mastered their form.
+          </li>
+          <li>
+            <strong>Explosive power.</strong> This training combines power and
+            speed to improve your power output. It's usually employed among
+            trained athletes to improve their ability to perform explosive
+            movements in their sport.
+            <a
+              class="benefits"
+              href="https://www.healthline.com/health/fitness/benefits-of-strength-training#benefits"
+              target="_blank"
+              >about benefits
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="https://static.standard.co.uk/2022/05/19/13/john-arano-h4i9G-de7Po-unsplash.jpg?width=1024&auto=webp&quality=50&crop=968%3A645%2Csmart"
+      />
+      <hr />
+      <span id="footer"
+        ><a>alert test</a> |
+        <a href="https://www.instagram.com/floriental.gourmands/">Instagram</a>
+      </span>
+    </div>
+    <script>
+      function applyNow() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+        let h2 = document.querySelector("h2");
+
+        if (email) {
+          h2.innerHTML = `Hi ${name}! We appreciate your support and hope to transform your confidence.`;
+        } else {
+          h2.innerHTML = `Sorry ${name}- please try again`;
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", applyNow);
+
+      function displayAlert() {
+        alert("be my friend");
+      }
+
+      let alertTest = document.getElementById("footer").firstElementChild;
+      alertTest.addEventListener("click", displayAlert);
+    </script>
+  </body>
+</html>
